@@ -1,12 +1,12 @@
 {
   "name": "angular-task",
-  "version": "0.0.1",
+  "version": "0.1",
   "homepage": "https://github.com/hemingw/angular-task",
   "authors": [
     "Hmeing Wang <heming.wang@yahoo.com>"
   ],
-  "description": "an easy to manage tasks",
-  "main": ["dist/angular-task.min.js"],
+  "description": "a global task manager for angular",
+  "main": ["src/angular-task.js"],
   "moduleType": [
     "globals"
   ],
