@@ -9,7 +9,7 @@
         root.ngTask = factory(root, root.angular);
     }
 }(this, function (window, angular) {
-    return angular.module('$task', []).factory('$task', ['$rootScope', '$http', '$interval', '$timeout', '$window',
+    return angular.module('ngTask', []).factory('$task', ['$rootScope', '$http', '$interval', '$timeout', '$window',
         function ($rootScope, $http, $interval, $timeout, $window) {
             var tasks = {};
             var _uiActionTime = (new Date).getTime();
