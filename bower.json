@@ -1,0 +1,33 @@
+{
+  "name": "angular-task",
+  "version": "0.0.1",
+  "homepage": "https://github.com/hemingw/angular-task",
+  "authors": [
+    "Hmeing Wang <heming.wang@yahoo.com>"
+  ],
+  "description": "an easy to manage tasks",
+  "main": ["dist/angular-task.min.js"],
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "angular",
+    "angularjs",
+    "task",
+    "component"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": ">= 1.2.25"
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.2.25"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "name": "angular-task",
+  "version": "0.0.1",
+  "description": "an easy way to manage angular tasks",
+  "main": "src/angular-task.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hemingw/angular-task.git"
+  },
+  "keywords": [
+    "angular",
+    "angularjs",
+    "task"
+  ],
+  "author": "heming.wang@yahoo.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hemingw/angular-task/issues"
+  },
+  "homepage": "https://github.com/hemingw/angular-task",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-compass": "^1.0.1",
+    "grunt-contrib-connect": "^0.8.0",
+    "grunt-contrib-cssmin": "^0.10.0",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-uglify": "^0.6.0",
+    "grunt-contrib-watch": "^0.6.1"
+  },
+  "dependencies": {
+    "grunt-shell": "^1.1.1",
+    "grunt-wiredep": "^2.0.0"
+  }
+}

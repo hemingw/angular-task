@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="../src/angular-task.js"></script>
+
+    <script src="js/app.js"></script>
+
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:900|Titillium+Web:300,700|Source+Code+Pro:300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Titillium+Web:300,700' rel='stylesheet' type='text/css'>
+</head>
+
+<body ng-controller="main" ng-init="init()">
+    <div id="main">
+        <div id="tasks">
+            <h3>Tasks</h3>
+            <ul>
+                <li ng-repeat="(k, v) in tasks">
+                    <span class="name">"{{k}}"</span>
+                    <span class="type" ng-if="v.type == 1">timeout</span>
+                    <span class="type" ng-if="v.type == 2">interval</span>
+                    <span class="type" ng-if="v.type == 3">elastic timeout</span>
+
+                    <a href="javascript:void(0)" ng-click="$task.stop(k)">$task.stop('{{k}}')</a>
+                    <a href="javascript:void(0)" ng-click="$task.start(k)">$task.start('{{k}}')</a>
+                    <a href="javascript:void(0)" ng-click="$task.remove(k)">$task.remove('{{k}}')</a>
+                </li>
+            </ul>
+            <ul class="global">
+                <li><a href="javascript:void(0)" ng-click="$task.stop('*')">$task.stop('*')</a>
+                </li>
+                <li><a href="javascript:void(0)" ng-click="$task.start('*')">$task.start('*')</a>
+                </li>
+                <li><a href="javascript:void(0)" ng-click="$task.stop('FirstGroup.*')">$task.stop('FirstGroup.*')</a>
+                </li>
+                <li><a href="javascript:void(0)" ng-click="$task.start('FirstGroup.*')">$task.start('FirstGroup.*')</a>
+                </li>
+            </ul>
+        </div>
+        <header>
+            <h1>angular-task</h1>
+            <p class="info">
+                a global task manager for angular.
+            </p>
+        </header>
+
+        <section class="example">
+            <pre class="code">
+			</pre>
+        </section>
+        
+        <section class="example d1">
+        	<input type="checkbox" ng-model="delay" value="true" /> delay?
+            <span ng-repeat="i in dotsFirst"><div class="dot bounce animated"></div></span>
+        </section>
+        <section class="example d1">
+
+            <span ng-repeat="i in dotsSecond"><div class="dot bounce animated"></div></span>
+        </section>
+        <section class="example d1">
+
+            <span ng-repeat="i in dotsThird"><div class="dot bounce animated"></div></span>
+        </section>
+    </div>
+    <footer>
+        <iframe src="http://ghbtns.com/github-btn.html?user=hemingw&repo=angular-task&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="90" height="20"></iframe>
+
+        <iframe src="http://ghbtns.com/github-btn.html?user=hemingw&type=follow" allowtransparency="true" frameborder="0" scrolling="0" width="180" height="20"></iframe>
+    </footer>
+
+    <a href="https://github.com/hemingw/angular-task" class="github-ribbon">Fork on Github</a>
+
+</body>
+
+</html>

@@ -1,0 +1,221 @@
+body {
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 15px;
+	width: 100%;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+#main{
+	margin-right: 300px;
+	padding-right: -300px;
+}
+
+a {
+	color: #049372;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+header {
+	text-align: center;
+	padding: 16px 0;
+}
+
+header h1 {
+	font-size: 2.3em;
+	font-family: 'Merriweather';
+	font-weight: 900;
+}
+
+header p.info {
+	font-size: 18px;
+}
+
+section.buttons {
+	text-align: center;
+	padding: 30px 0;
+}
+
+section.buttons .hide {
+	margin-top: 16px;
+}
+
+section.example {
+	max-width: 760px;
+	margin: 26px auto;
+	background-color: #434c54;
+	color: #fff;
+	padding: 6px 24px;
+	border-radius: 6px;
+}
+
+pre.code {
+	white-space: pre-wrap;
+	font-size: 11px;
+	font-family: 'Source Code', 'Source Code Pro', monospace;
+}
+
+pre.code .kwrd, pre.code .str {
+	color: #86E2D5;
+}
+
+pre.code .rem {
+	color: #E4F1FE;
+}
+
+footer {
+	text-align: center;
+}
+
+.btn {
+	padding: 16px;
+	margin: 0 14px;
+	border: 0;
+	width: 160px;
+}
+
+.btn:focus {
+	outline: 0;
+}
+
+.btn-error {
+	background-color: #F64747;
+	color: #fff;
+}
+
+.btn-warning {
+	background-color: #F7CA18;
+	color: #fff;
+}
+
+.btn-success {
+	background-color: #03C9A9;
+	color: #fff;
+}
+
+.github-ribbon {
+	font-family: sans-serif;
+	display: block;
+	background: #ABB7B7;
+	color: #fff;
+	font-size: 12px;
+	padding: 12px 50px;
+	position: fixed;
+	top: 38px;
+	right: -45px;
+	text-decoration: none;
+	text-transform: uppercase;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+	z-index: 1;
+}
+
+.dot{
+	width:10px;
+	height:10px;
+	border-radius: 5px;
+	background: #999999;
+	display:inline-block;
+	margin:3px;
+	;
+
+}
+#tasks{
+	position: fixed;
+	right:0;
+	bottom:0;
+	top:0;
+	width:300px;
+	background: rgba(100,100,100,0.1);
+	overflow-y: auto;
+}
+
+#tasks h3{
+	margin-top: 50px;
+	padding:0 30px;
+}
+#tasks ul{
+	list-style: none;
+	padding-left: 20px;
+}
+
+#tasks ul li{
+	background:rgba(0,0,0,0.8);
+	padding:15px;
+	color:white;
+	border-radius: 2px;
+	margin-right:20px;
+}
+
+#tasks .name{
+	display: block;
+	font-size: 1.2em;
+}
+
+#tasks .type{
+	display: block;
+	color:#CCCCCC;
+}
+
+#tasks a{
+	font-size: 0.9em;
+	text-decoration: underline;
+}
+
+#tasks ul.global li{
+	padding-top:5px;
+	padding-bottom:5px;
+}
+
+.animated { 
+    -webkit-animation-duration: 1s; 
+    animation-duration: 1s; 
+    -webkit-animation-fill-mode: both; 
+    animation-fill-mode: both; 
+} 
+
+@-webkit-keyframes bounceIn { 
+    0% { 
+        opacity: 0; 
+        -webkit-transform: scale(.3); 
+    } 
+
+    20% { 
+        opacity: 1; 
+        -webkit-transform: scale(1.5); 
+    } 
+
+    25% { 
+        -webkit-transform: scale(.7); 
+    } 
+
+    30% { 
+         -webkit-transform: scale(1); 
+    } 
+} 
+
+@keyframes bounceIn { 
+    0% { 
+        opacity: 0; 
+        transform: scale(.3); 
+    } 
+
+    20% { 
+        opacity: 1; 
+        transform: scale(1.5); 
+    } 
+
+    25% { 
+        transform: scale(.7); 
+    } 
+
+    30% { 
+        transform: scale(1); 
+    } 
+}
+.bounce { 
+    -webkit-animation-name: bounceIn; 
+    animation-name: bounceIn; 
+} 
